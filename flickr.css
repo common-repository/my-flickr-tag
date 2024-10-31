@@ -1,0 +1,34 @@
+.flicontainer {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.responsive-image {
+	max-width: 100%;
+}
+
+.flimg img {
+	display: block;
+}
+
+.flimg img:hover {
+	transform: scale(1.8, 1.8);
+	transition: .3s transform;
+}
+
+@media screen and (min-width: 600px) {
+	.fligrid {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.flimg {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.flimg {
+		width: calc(100% / 3);
+	}
+}
